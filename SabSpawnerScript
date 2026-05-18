@@ -49,16 +49,16 @@ local function GetSafeParent()
 end
 
 -- ── THEME ────────────────────────────────────────────────
-local BG      = Color3.fromRGB(22,5,5)
-local SURFACE = Color3.fromRGB(35,8,8)
-local ACCENT  = Color3.fromRGB(220,30,30)
-local BORDER  = Color3.fromRGB(100,20,20)
-local TEXT    = Color3.fromRGB(255,220,220)
-local SUBTEXT = Color3.fromRGB(180,100,100)
-local ITEMHOV = Color3.fromRGB(55,15,15)
-local ITEMSEL = Color3.fromRGB(100,20,20)
-local BTNRED  = Color3.fromRGB(200,30,30)
-local BTNGRN  = Color3.fromRGB(180,30,30)
+local BG      = Color3.fromRGB(18,10,32)
+local SURFACE = Color3.fromRGB(34,18,56)
+local ACCENT  = Color3.fromRGB(162,89,255)
+local BORDER  = Color3.fromRGB(96,60,160)
+local TEXT    = Color3.fromRGB(240,230,255)
+local SUBTEXT = Color3.fromRGB(182,160,220)
+local ITEMHOV = Color3.fromRGB(52,32,84)
+local ITEMSEL = Color3.fromRGB(96,60,160)
+local BTNRED  = Color3.fromRGB(162,89,255)
+local BTNGRN  = Color3.fromRGB(132,74,220)
 
 local RARITY_COLORS = {
     Common              = Color3.fromRGB(0,171,40),
@@ -3244,7 +3244,7 @@ local function _buildAndRun()
 
 -- ── ROOT GUI ─────────────────────────────────────────────
 local sg = New("ScreenGui", {
-    Name="ClxoudsVisualsSpawner", ResetOnSpawn=false, IgnoreGuiInset=true,
+    Name="Astr4lDupe", ResetOnSpawn=false, IgnoreGuiInset=true,
     ZIndexBehavior=Enum.ZIndexBehavior.Sibling, DisplayOrder=5000,
     Parent=GetSafeParent(),
 })
@@ -3291,7 +3291,7 @@ Corner(tbar, 8)
 New("Frame", {Size=UDim2.new(1,0,0.5,0), Position=UDim2.new(0,0,0.5,0), BackgroundColor3=Color3.fromRGB(30,28,42), BorderSizePixel=0, Parent=tbar})
 New("TextLabel", {
     Size=UDim2.new(1,-20,1,0), Position=UDim2.new(0,10,0,0),
-    Text="Clxouds Dupes",
+    Text="Astr4l Dupe",
     TextColor3=Color3.fromRGB(230,230,240), Font=Enum.Font.GothamSemibold,
     TextSize=10, BackgroundTransparency=1,
     TextXAlignment=Enum.TextXAlignment.Left, Parent=tbar,
